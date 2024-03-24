@@ -11,7 +11,7 @@ export const media = {
 }
 
 export const container = style({
-  maxWidth: theme.sizes.container,
+  maxWidth: "100%",
   marginLeft: "auto",
   marginRight: "auto",
   paddingLeft: theme.space[4],
@@ -194,11 +194,11 @@ export const box = styleVariants({
 })
 
 export const section = style({
-  paddingTop: theme.space[4],
+  paddingTop: theme.space[0],
   paddingBottom: theme.space[4],
   "@media": {
     [media.small]: {
-      paddingTop: theme.space[5],
+      paddingTop: theme.space[0],
       paddingBottom: theme.space[5],
     },
   },

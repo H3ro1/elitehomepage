@@ -15,28 +15,19 @@ import {
 
 export default function Hero(props) {
   return (
-    <Section>
-      <Container>
-        <Flex gap={4} variant="responsive">
-          <Box width="half">
+    <Section style={{height: "850px", overflow: "hidden"}}>
+          <Box>
             {props.image && (
-              <GatsbyImage
+              <GatsbyImage style={{
+                objectFit: "stretch",
+                width:"100%",
+                height: "auto"
+              }}
                 alt={props.image.alt}
                 image={getImage(props.image.gatsbyImageData)}
               />
             )}
           </Box>
-          <Box width="half">
-            <Heading as="h1">
-              {props.kicker && <Kicker>{props.kicker}</Kicker>}
-              {props.h1}
-            </Heading>
-            <Subhead as="h2">{props.subhead}</Subhead>
-            <Text as="p">{props.text}</Text>
-            <ButtonList links={props.links} />
-          </Box>
-        </Flex>
-      </Container>
     </Section>
   )
 }

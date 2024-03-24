@@ -3,15 +3,16 @@ import { theme } from "../theme.css"
 import { media } from "./ui.css"
 
 export const desktopHeaderNavWrapper = style({
-  position: "relative",
+  position: "fixed",
+  alignItems: "center",
+  left:"50%",
+  transform:"translateX(-50%)",
   zIndex: 1,
-  display: "none",
-  "@media": {
-    [media.small]: {
-      display: "block",
-      paddingTop: theme.space[4],
-    },
-  },
+  backgroundColor:  "rgb(26, 36, 86)",
+  display: "block",
+  width: "99%",
+  marginTop: "20px",
+  height: "55px",
 })
 
 const mobileHeaderNavWrapperBase = style({
