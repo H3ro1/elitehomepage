@@ -11,28 +11,7 @@ export function LogoItem(props) {
 }
 
 export default function LogoList(props) {
-  return (
-    <Section paddingY={4}>
-      <Container width="narrow">
-        {props.text && (
-          <Text center variant="lead">
-            {props.text}
-          </Text>
-        )}
-        <Space size={4} />
-        <FlexList gap={4} variant="center">
-          {props.logos.map(
-            (logo) =>
-              logo && (
-                <li key={logo.id}>
-                  <LogoItem {...logo} />
-                </li>
-              )
-          )}
-        </FlexList>
-      </Container>
-    </Section>
-  )
+
 }
 
 export const query = graphql`

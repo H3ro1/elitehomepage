@@ -15,7 +15,7 @@ import {
 
 export default function Hero(props) {
   return (
-    <Section style={{height: "850px", overflow: "hidden"}}>
+    <Section style={{height: "675px", overflow: "hidden", filter: "brightness(60%)"}}>
           <Box>
             {props.image && (
               <GatsbyImage style={{

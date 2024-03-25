@@ -12,7 +12,7 @@ export const desktopHeaderNavWrapper = style({
   display: "block",
   width: "99%",
   marginTop: "20px",
-  height: "55px",
+  height: "53px",
 })
 
 const mobileHeaderNavWrapperBase = style({
